@@ -1,10 +1,33 @@
-let num = 1234;
+// Input: a number
+// Output: "Hot", "Cold", or "Normal"
+// Returns: a string
+ 
+function checkTemperature(temp) {
+  
+  if(temp >= 30 ){
 
-let numToStr = num.toString();
+    return "Hot";
 
-let numRev = numToStr.reverse();
+  } else if( temp <= 15 ){
 
-console.log(numToStr);
+    return "Cold";
 
-console.log(numRev);
+  }else {
 
+    return "Normal"; 
+  }
+ 
+}
+ 
+console.log(checkTemperature(35)); // Expected: "Hot"
+console.log(checkTemperature(10)); // Expected: "Cold"
+console.log(checkTemperature(20)); // Expected: "Normal"
+
+
+/* 
+Output
+
+Hot
+Cold
+Normal
+*/
