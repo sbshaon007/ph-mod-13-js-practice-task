@@ -6,11 +6,10 @@
 function productOfDigits(num) {
   let str = num.toString();
   let total = 1;
-  // TODO: loop through each character, convert to number, and multiply
+  
+  for(const digit of str){
 
-  for(const digits of str){
-
-    let digitStrToNum = Number(digits);
+    let digitStrToNum = Number(digit);
 
     total = total * digitStrToNum;
         
