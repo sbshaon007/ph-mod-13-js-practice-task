@@ -13,7 +13,6 @@ function isPalindrome(str) {
 
     }
 
-
     if (str === reverseStr) {
 
         return true;
@@ -23,8 +22,6 @@ function isPalindrome(str) {
         return false;
 
     }
-
-    return reverseStr;
 
 }
 
